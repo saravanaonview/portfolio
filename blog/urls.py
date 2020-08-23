@@ -19,5 +19,5 @@ from blog import views
 
 urlpatterns = [
     path('', views.Home , name="vechuko"),
-    path('<int:blog_id>/', views.sep_view , name="sep"),
+    path('<int:blog_id>/', views.sepview , name="sep"),
 ]

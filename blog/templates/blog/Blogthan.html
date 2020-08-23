@@ -81,8 +81,7 @@
     <hr>
     {% for blogw in Blogdf.all %}
     <!-- <div class="col p-4 d-flex flex-column position-static"> -->
-    <a href="#">
-    <h3 >{{ blogw.Description }}</h3></a>
+    <a href="{% url 'sep' blogw.id %}"><h3>{{ blogw.Description }}</h3></a>
     {{ blogw.time_prety }}
     <br>
     <img class="bd-placeholder-img" src="{{ blogw.image.url }}" width="200" height="250" />
